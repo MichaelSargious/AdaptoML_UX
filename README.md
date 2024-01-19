@@ -15,10 +15,6 @@ To get started with AdaptoML_UX, ensure you have Python 3.x installed on your sy
 
 ## Usage Guide
 Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-friendly, guiding you through various steps of machine learning model development:
-- Select data files for training and testing.
-- Choose methods for feature extraction, selection, and model adaptation.
-- Customize classifiers or regressors as per your requirement.
-- View and analyze the results within the interface.
 
 ### Mandatory Arguments Section
 - **Select CSV data file**: Click the 'Browse' button to upload your dataset in CSV format.
