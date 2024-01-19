@@ -27,8 +27,12 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - Other files like `FeatureExtraction.py`, `FeatureSelection.py`, and `Imputation.py` handle respective functionalities in the ML pipeline.
 - `Utilities.py`: Provides supporting functions used throughout the application.
 
+## Issues
+
+If you face any problems while using the toolkit, please open an issue here - https://github.com/MichaelSargious/AdaptoML_UX/issues or contact us under amgo02@dfki.de.
+
 ## License Information
 [Specify License Here]
 
 ## Contact Information
-For support, queries, or contributions, please reach out to amr
+For support, queries, or contributions, please reach out to amgo02@dfki.de.
