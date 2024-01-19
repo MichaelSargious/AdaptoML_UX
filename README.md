@@ -26,7 +26,8 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - **Reset inputs**: Click this button to clear all inputs and reset to default settings.
 
 ### Data Preprocessing Section
-![Data Preprocessing](src="logo_image/DP.png" width="800")
+<img src="logo_image/DP.png" width="800">
+
 - **Imputation method**: Choose how you want to handle missing data from the dropdown menu.
 - **Normalization type**: Select the normalization technique for your data.
 - **Test size**: Specify what proportion of your data should be used for testing.
