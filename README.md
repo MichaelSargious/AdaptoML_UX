@@ -18,6 +18,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 
 ### Mandatory Arguments Section
 <img src="logo_image/MA.png" width="800">
+
 - **Select CSV data file**: Click the 'Browse' button to upload your dataset in CSV format.
 - **Label column name**: Enter the name of the column that contains the target or label for your model.
 - **Adaptation column name**: If your data includes a column for adaptation (e.g., user ID), specify it here.
