@@ -17,7 +17,7 @@ To get started with AdaptoML_UX, ensure you have Python 3.x installed on your sy
 Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-friendly, guiding you through various steps of machine learning model development:
 
 ### Mandatory Arguments Section
-![Mandatory Arguments]<img src="logo_image/MA.png" width="600">
+![Mandatory Arguments]<img src="logo_image/MA.png" width="800">
 - **Select CSV data file**: Click the 'Browse' button to upload your dataset in CSV format.
 - **Label column name**: Enter the name of the column that contains the target or label for your model.
 - **Adaptation column name**: If your data includes a column for adaptation (e.g., user ID), specify it here.
