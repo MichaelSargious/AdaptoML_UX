@@ -35,7 +35,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - **Columns to be initially removed**: List any columns you want to exclude from the model.
 
 ### Extraction and Selection Section
-![Extraction and Selection](logo_image/ES.png)
+<img src="logo_image/ES.png" width="800">
 - **Feature extraction methods**: Check the methods you want to apply for feature extraction.
 - **Feature selection methods**: Choose the methods for feature selection.
 - **Perform feature selection first**: Toggle whether to perform feature selection before extraction.
@@ -43,7 +43,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - **Metric to select best extraction/selection method with**: Select the metric for evaluating feature extraction and selection from the dropdown.
 
 ### Classifiers and Regressors Section
-![Classifiers and Regressors](logo_image/clf.png)
+<img src="logo_image/clf.png" width="800">
 - **Classifiers and regressors**: Enable or disable this module using the checkbox.
 - **Select a suitable metric**: From the dropdown, choose the metric for adaptation, incremental learning, or evaluation.
 - **Load trained models file/s**: Use the 'Browse' button to upload pre-trained model files.
