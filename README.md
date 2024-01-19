@@ -17,7 +17,7 @@ To get started with AdaptoML_UX, ensure you have Python 3.x installed on your sy
 Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-friendly, guiding you through various steps of machine learning model development:
 
 ### Mandatory Arguments Section
-![Mandatory Arguments](https://github.com/MichaelSargious/AdaptoML_UX/blob/main/logo_image/MA.png)
+![Mandatory Arguments](logo_image/MA.png)
 - **Select CSV data file**: Click the 'Browse' button to upload your dataset in CSV format.
 - **Label column name**: Enter the name of the column that contains the target or label for your model.
 - **Adaptation column name**: If your data includes a column for adaptation (e.g., user ID), specify it here.
@@ -25,6 +25,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - **Reset inputs**: Click this button to clear all inputs and reset to default settings.
 
 ### Data Preprocessing Section
+![Data Preprocessing](logo_image/DP.png)
 - **Imputation method**: Choose how you want to handle missing data from the dropdown menu.
 - **Normalization type**: Select the normalization technique for your data.
 - **Test size**: Specify what proportion of your data should be used for testing.
@@ -32,6 +33,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - **Columns to be initially removed**: List any columns you want to exclude from the model.
 
 ### Extraction and Selection Section
+![Extraction and Selection](link-to-extraction-selection-screenshot)
 - **Feature extraction methods**: Check the methods you want to apply for feature extraction.
 - **Feature selection methods**: Choose the methods for feature selection.
 - **Perform feature selection first**: Toggle whether to perform feature selection before extraction.
@@ -39,6 +41,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - **Metric to select best extraction/selection method with**: Select the metric for evaluating feature extraction and selection from the dropdown.
 
 ### Classifiers and Regressors Section
+![Classifiers and Regressors](link-to-classifiers-regressors-screenshot)
 - **Classifiers and regressors**: Enable or disable this module using the checkbox.
 - **Select a suitable metric**: From the dropdown, choose the metric for adaptation, incremental learning, or evaluation.
 - **Load trained models file/s**: Use the 'Browse' button to upload pre-trained model files.
