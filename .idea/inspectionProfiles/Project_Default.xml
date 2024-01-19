@@ -1,0 +1,89 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="1791" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyChainedComparisonsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreConstantInTheMiddle" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyGlobalUndefinedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="customtkinter" />
+            <item index="1" class="java.lang.String" itemvalue="pandas" />
+            <item index="2" class="java.lang.String" itemvalue="mlxtend" />
+            <item index="3" class="java.lang.String" itemvalue="scikit_learn" />
+            <item index="4" class="java.lang.String" itemvalue="numpy" />
+            <item index="5" class="java.lang.String" itemvalue="PIL" />
+            <item index="6" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E129" />
+          <option value="E122" />
+          <option value="E266" />
+          <option value="E303" />
+          <option value="E125" />
+          <option value="E722" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N803" />
+          <option value="N802" />
+          <option value="N801" />
+          <option value="N814" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="dict" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="solution.animal" />
+          <option value="MMEmotionRecognition.src.Video.models.sequenceLearning.nn.models.src" />
+          <option value="object.predict" />
+          <option value="object.k_feature_names_" />
+          <option value="list.shape" />
+          <option value="FeatureExtraction.FeatureExtraction_Methods.rem_df" />
+          <option value="Classifiers.compute_classifiers.values" />
+          <option value="object.transform" />
+          <option value="main.FeatureSelection" />
+          <option value="main.FeatureExtraction" />
+          <option value="object.feature_importances_" />
+          <option value="object.coef_" />
+          <option value="str.values" />
+          <option value="MainGUI.App.choiceLabel" />
+          <option value="customtkinter.windows.widgets.ctk_checkbox.CTkCheckBox.set" />
+          <option value="MainGUI.App.trained_models_confirmation" />
+          <option value="MainGUI.App.previous_adapted_confirmation" />
+          <option value="MainGUI.App.partialFit_confirmation" />
+          <option value="MainGUI.App.predict_confirmation" />
+          <option value="MainGUI.App.rowData_confirmation" />
+          <option value="str.__setitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

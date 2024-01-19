@@ -11,7 +11,15 @@ warnings.filterwarnings("ignore")
 
 
 def show_checkmark():
-    # Show some positive message with the checkmark icon
+    """
+        Displays a success message with a checkmark icon.
+
+        Shows a message indicating successful execution and prompts the user
+        with options to perform another task or close the application.
+
+        No parameters.
+        No return value.
+        """
     msg = CTkMessagebox(title="Done",
                         message='The task is successfully executed. Check the results of the executed operations in "./results" folder.',
                         icon="check", option_1="Another task", option_3="Close")
@@ -25,7 +33,17 @@ def show_checkmark():
 
 
 def show_error(exc):
-    # Show some error message
+    """
+        Displays an error message.
+
+        Shows a formatted error message based on the passed exception and
+        provides the user with options to either stay in the application or close it.
+
+        Parameters:
+        - exc: The exception or error message to be displayed.
+
+        No return value.
+        """
     msg = '{err}. '.format(err=exc) + "Do you want to close the program?"
     msg = CTkMessagebox(title="Error", icon="cancel", message=msg, option_1="Stay", option_3="Yes")
     response = msg.get()
@@ -37,9 +55,20 @@ def show_error(exc):
 
 
 class App(customtkinter.CTk):
+    """
+      Description:
+      The main application class for the GUI, inheriting from customtkinter.CTk.
+      Parameters:
+      Returns:
+      """
     def __init__(self):
+        """
+               Description:
+               Initializes the application, setting up the main window and layout.
+               Parameters:
+               Returns:
+               """
         super().__init__()
-
         # to save paths selected by the user
         self.filePath_rowData = None
         self.filePath_trainedModels = None

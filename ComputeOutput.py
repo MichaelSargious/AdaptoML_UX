@@ -12,6 +12,14 @@ warnings.filterwarnings("ignore")
 
 
 class ComputeOutput:
+    """
+        Description:
+        The ComputeOutput class handles the overall computation process, including
+        data processing, feature extraction, selection, and model fitting.
+
+        Attributes:
+        - Various configuration parameters for the computation process.
+        """
     def __init__(self,
                  test_size_entry_field,
                  val_size_entry_field,
@@ -42,6 +50,30 @@ class ComputeOutput:
                  filePath_adapted_previous_info,
                  filePath_incremented_previous_info
                  ):
+        """
+                Description:
+                Initializes the ComputeOutput class with various configuration parameters.
+
+                Parameters:
+                - test_size_entry_field: Entry field for test size.
+                - val_size_entry_field: Entry field for validation size.
+                - drop_cols_entry_field: Entry field for columns to be dropped.
+                - Classifiers_Regressors_choice: Choice of classifiers or regressors.
+                - label_name_entry_field: Entry field for label name.
+                - extraction_choice: Choice of feature extraction method.
+                - selection_choice: Choice of feature selection method.
+                - adaptation_choice: Choice of adaptation method.
+                - personalization_name_entry_field: Entry field for personalization name.
+                - saving_choice1, saving_choice2: Choices for saving options.
+                - filePath_trainedModels: File path for trained models.
+                - fit_choice: Choice of fitting method.
+                - predict_choice1: Choice of prediction method.
+                - partialFit_choice1: Choice for partial fitting.
+                - save_models_options: Options for saving models.
+
+                Returns:
+                - None.
+                """
         self.test_size_entry_field = test_size_entry_field.get()
         self.val_size_entry_field = val_size_entry_field.get()
         self.drop_cols_entry_field = drop_cols_entry_field.get()
