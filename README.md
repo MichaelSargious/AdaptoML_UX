@@ -67,11 +67,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 These features are part of the AdaptoML-UX interface, designed to facilitate an interactive and user-friendly experience for machine learning model development.
 
 ## Issues
-
 If you face any problems while using the toolkit, please open an issue here - https://github.com/MichaelSargious/AdaptoML_UX/issues or contact us under amgo02@dfki.de.
-
-## License Information
-[Specify License Here]
 
 ## Contact Information
 For support, queries, or contributions, please reach out to amgo02@dfki.de.
