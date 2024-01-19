@@ -27,14 +27,8 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 - Other files like `FeatureExtraction.py`, `FeatureSelection.py`, and `Imputation.py` handle respective functionalities in the ML pipeline.
 - `Utilities.py`: Provides supporting functions used throughout the application.
 
-## Contribution Guidelines
-Contributions to AdaptoML_UX are welcome! Please adhere to the following guidelines:
-- Ensure code consistency with PEP8 standards.
-- Create a new branch for each feature or bug fix.
-- Submit a pull request with a clear description of changes and reference to any related issues.
-
 ## License Information
 [Specify License Here]
 
 ## Contact Information
-For support, queries, or contributions, please reach out to [Your Contact Information].
+For support, queries, or contributions, please reach out to amr
