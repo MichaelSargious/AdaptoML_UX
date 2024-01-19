@@ -36,6 +36,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 
 ### Extraction and Selection Section
 <img src="logo_image/ES.png" width="800">
+
 - **Feature extraction methods**: Check the methods you want to apply for feature extraction.
 - **Feature selection methods**: Choose the methods for feature selection.
 - **Perform feature selection first**: Toggle whether to perform feature selection before extraction.
@@ -44,6 +45,7 @@ Run `MainGUI.py` to start the application. The GUI is self-explanatory and user-
 
 ### Classifiers and Regressors Section
 <img src="logo_image/clf.png" width="800">
+
 - **Classifiers and regressors**: Enable or disable this module using the checkbox.
 - **Select a suitable metric**: From the dropdown, choose the metric for adaptation, incremental learning, or evaluation.
 - **Load trained models file/s**: Use the 'Browse' button to upload pre-trained model files.
