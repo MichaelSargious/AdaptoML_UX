@@ -1,7 +1,7 @@
 # AdaptoML_UX
 An Adaptive Incremental End-to-End ML Framework with Automated Feature Engineering
 
-## Project Overview
+## Overview
 AdaptoML_UX is an innovative machine learning framework that offers an intuitive graphical user interface. It's designed to streamline and automate key stages in the machine learning workflow, such as feature extraction, selection, and model adaptation, making it more accessible for users with varying levels of expertise in machine learning.
 
 ## Installation Instructions
