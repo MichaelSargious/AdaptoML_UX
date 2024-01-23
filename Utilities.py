@@ -313,8 +313,8 @@ def plot_all_metrics(run, others, task_type, session_nr):
     figure.suptitle("Entities evaluation with different metrics in session " + str(session_nr))
 
     for (r, c), (metric, values) in zip(rows_columns_gragh, run_by_metric.items()):
-        axes[r, c].plot(x_index, values, 'o-', label="adapted entities")
-        axes[r, c].plot(x_index, others_by_metric[metric], 'o-', label="non adapted entities")
+        axes[r, c].plot(values, x_index, 'o-', label="adapted entities")
+        axes[r, c].plot(others_by_metric[metric], x_index, 'o-', label="non adapted entities")
         axes[r, c].set_title(metric)
         axes[r, c].legend()
 
@@ -348,8 +348,8 @@ def plot_sessions_graphs(persons_avg_dict, others_avg_dict, task_type):
     figure.suptitle("Avg evaluation with different metrics in all sessions")
 
     for (r, c), (metric, values) in zip(rows_columns_gragh, persons_avg_by_metric.items()):
-        axes[r, c].plot(x_index, values, 'o-', label="adapted entities")
-        axes[r, c].plot(x_index, others_avg_by_metric[metric], 'o-', label="non adapted entities")
+        axes[r, c].plot(values, x_index, 'o-', label="adapted entities")
+        axes[r, c].plot(others_avg_by_metric[metric], x_index, 'o-', label="non adapted entities")
         axes[r, c].set_title(metric)
         axes[r, c].legend()
 
@@ -395,7 +395,7 @@ def plot_incremental_graphs(eva_dict, task_type):
     figure.suptitle("Avg incremental evaluation with different metrics from all sessions")
 
     for (r, c), (metric, values) in zip(rows_columns_gragh, eva_by_metric.items()):
-        axes[r, c].plot(x_index, values, 'o-', label="avg incremental evaluation")
+        axes[r, c].plot(values, x_index, 'o-', label="avg incremental evaluation")
         axes[r, c].set_title(metric)
         axes[r, c].legend()
 

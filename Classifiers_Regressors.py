@@ -143,13 +143,13 @@ def adapting_models(task_type, metric_type, X_train, Y_train, X_test, Y_test, X_
     U.plot_sessions_graphs(previous_persons_avg_dict, previous_others_avg_dict, task_type)
 
     previous_adapted_data_dict = {
-        "all_entities_with_all_metrics": all_persons_with_all_metrics,
+        "all_persons_with_all_metrics": all_persons_with_all_metrics,
         "all_others_with_all_metrics": all_others_with_all_metrics,
-        "previous_entities_avg_dict": previous_persons_avg_dict,
+        "previous_persons_avg_dict": previous_persons_avg_dict,
         "previous_others_avg_dict": previous_others_avg_dict,
         "UBM_model_eva": UBM_model_eva,
         "UBM": clf.best_model,
-        "session_nr": session_nr,
+        "session_nr": session_nr
     }
 
     with open("results/adapted_data_file_in_session_" + str(session_nr) + ".pickle", 'wb') as fp:
