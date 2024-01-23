@@ -305,17 +305,18 @@ def plot_all_metrics(run, others, task_type, session_nr):
 
     if task_type == "Classification":
         rows_columns_gragh = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 1)]
-        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(15, 15))
+        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(15, 15), constrained_layout=True)
     else:
         rows_columns_gragh = [(0, 0), (0, 1), (1, 0), (1, 1)]
-        figure, axes = plt.subplots(nrows=2, ncols=2, figsize=(15, 15))
+        figure, axes = plt.subplots(nrows=2, ncols=2, figsize=(15, 15), constrained_layout=True)
 
     figure.suptitle("Entities evaluation with different metrics in session " + str(session_nr))
 
     for (r, c), (metric, values) in zip(rows_columns_gragh, run_by_metric.items()):
-        axes[r, c].plot(values, x_index, 'o-', label="adapted entities")
-        axes[r, c].plot(others_by_metric[metric], x_index, 'o-', label="non adapted entities")
+        axes[r, c].plot(x_index, values, 'o-', label="adapted entities")
+        axes[r, c].plot(x_index, others_by_metric[metric], 'o-', label="non adapted entities")
         axes[r, c].set_title(metric)
+        axes[r, c].set_xticklabels(x_index, rotation=45, ha='right')
         axes[r, c].legend()
 
     plt.savefig("results/entities_and_others_evaluation_metrics_in_session_" + str(session_nr) + ".png")
@@ -340,17 +341,18 @@ def plot_sessions_graphs(persons_avg_dict, others_avg_dict, task_type):
 
     if task_type == "Classification":
         rows_columns_gragh = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]
-        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13))
+        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13), constrained_layout=True)
     else:
         rows_columns_gragh = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 1)]
-        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13))
+        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13), constrained_layout=True)
 
     figure.suptitle("Avg evaluation with different metrics in all sessions")
 
     for (r, c), (metric, values) in zip(rows_columns_gragh, persons_avg_by_metric.items()):
-        axes[r, c].plot(values, x_index, 'o-', label="adapted entities")
-        axes[r, c].plot(others_avg_by_metric[metric], x_index, 'o-', label="non adapted entities")
+        axes[r, c].plot(x_index, values, 'o-', label="adapted entities")
+        axes[r, c].plot(x_index, others_avg_by_metric[metric], 'o-', label="non adapted entities")
         axes[r, c].set_title(metric)
+        axes[r, c].set_xticklabels(x_index, rotation=45, ha='right')
         axes[r, c].legend()
 
     plt.savefig("results/persons_and_others_avg_evaluation_all_sessions.png")
@@ -387,16 +389,17 @@ def plot_incremental_graphs(eva_dict, task_type):
 
     if task_type == "Classification":
         rows_columns_gragh = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]
-        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13))
+        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13), constrained_layout=True)
     else:
         rows_columns_gragh = [(0, 0), (0, 1), (1, 0), (1, 1), (2, 1)]
-        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13))
+        figure, axes = plt.subplots(nrows=3, ncols=2, figsize=(13, 13), constrained_layout=True)
 
     figure.suptitle("Avg incremental evaluation with different metrics from all sessions")
 
     for (r, c), (metric, values) in zip(rows_columns_gragh, eva_by_metric.items()):
-        axes[r, c].plot(values, x_index, 'o-', label="avg incremental evaluation")
+        axes[r, c].plot(x_index, values, 'o-', label="avg incremental evaluation")
         axes[r, c].set_title(metric)
+        axes[r, c].set_xticklabels(x_index, rotation=45, ha='right')
         axes[r, c].legend()
 
     plt.savefig("results/avg_incremental_evaluation_all_sessions.png")
