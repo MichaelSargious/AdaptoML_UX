@@ -71,3 +71,20 @@ If you face any problems while using the toolkit, please open an issue here - ht
 
 ## Contact Information
 For support, queries, or contributions, please reach out to amr.gomaa@dfki.de.
+
+## Citation
+
+- If you find this code helpful, please cite our papers:
+```
+
+@misc{gomaa2024adaptomluxadaptiveusercenteredguibased,
+      title={AdaptoML-UX: An Adaptive User-centered GUI-based AutoML Toolkit for Non-AI Experts and HCI Researchers}, 
+      author={Amr Gomaa and Michael Sargious and Antonio Krüger},
+      year={2024},
+      eprint={2410.17469},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2410.17469}, 
+}
+
+```
